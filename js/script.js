@@ -16,8 +16,8 @@ function fadeOutnojquery(el){
       clearInterval(interpreloader);
       preloader.style.display = "none";
     }},16);
-  $('.tabs').hide().fadeIn('slow');
-  $('.tabs-content').hide().fadeIn(1500);
+  $('.tabs').hide().fadeIn(1300);
+  $('.tabs-content').hide().fadeIn(2000, 'linear');
   };
 $(document).ready(function () {
   setTimeout(function(){
