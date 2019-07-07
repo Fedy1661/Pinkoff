@@ -22,7 +22,7 @@ $(document).ready(function () {
     $('body,html').animate({scrollTop: top}, 1500);
     setTimeout(function(){
       $('#fio').focus();
-    },2000);
+    },1600);
   });
   $('#tel').mask('+7 (999) 999-99-99');
   $('#data').mask('99.99.9999');
