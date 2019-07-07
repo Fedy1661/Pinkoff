@@ -17,12 +17,13 @@ function fadeOutnojquery(el){
       preloader.style.display = "none";
     }},16);
   };
+  $('.tabs-content, .tabs').hide();
 $(document).ready(function () {
   setTimeout(function(){
     fadeOutnojquery(preloader);
   },1000);
-  $('.tabs-content').hide().fadeToggle(3300,'swing',1).css('animation-delay', '1.4s');
-  $('.tabs').hide().fadeToggle(3000,'linear',1).css('animation-delay', '1.2s');
+  $('.tabs-content').delay(1000).fadeToggle(1300,'linear');
+  $('.tabs').delay(1000).fadeToggle(1300,'linear');
   var inputs = ['fio', 'tel', 'email', 'data', 'sendButton'];
   $(".tabs-content").on("click", 'button',function (event) { // Плавный переход вниз страницы
     event.preventDefault();
