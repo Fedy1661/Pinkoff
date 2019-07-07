@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Пенькофф</title>
+        <meta charset="UTF-8">
+        <meta name='viewport' content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+        <link rel='stylesheet' media="all" href='css/animate.css'>
+        <link rel='stylesheet' href='css/style.css'>
+    </head>
+    <body>
+        <div id="preloader">
+            <div id="preloader_preload"></div>
+        </div>
+        <header class='header'>    
+            <div class="container">
+                <div class="header-wrap">
+                    <nav class="navigation">
+                        <a class="logo">Пенькофф</a>
+                        <a href="#" class="nav__link">Банки</a>
+                        <a href="#" class="nav__link">Чулки</a>
+                        <a href="#" class="nav__link">Под подушкой</a>
+                        <a href="#" class="nav__link">Страховка</a>
+                        <a href="#" class="nav__link">Кэшбек</a>
+                    </nav>
+                    <a href="#" class="login">Войти</a>
+                </div>
+            </div>
+                <!-- /.header-wrap -->
+        </header>
+
+        <section>
+            <div class="container">
+                <div class="tabs">
+                    <h1 class="tabs-logo">Penkoff Blank</h1>
+                    <ul class="tabs-menu">
+                        <li class="tabs-menu__item">Обзор</li>
+                        <li class="tabs-menu__item">Примеры</li>
+                        <li class="tabs-menu__item">Документы</li>
+                        <li class="tabs-menu__item">Как пользоваться</li>
+                    </ul>
+                </div> <!-- /tabs-->
+                <div class="tabs-content">
+                    <h2 class="tabs-content__title">Храните деньги в банке.<br>Это надёжно и безопасно.</h2>
+                    <p class="tabs-content__text">Вы можете быть уверены, что ваши деньги в надёжном месте, если они в&nbsp;трехлитровой банке.</p>
+                    <button href='#orderBank' class="button">Заказать банку</button>
+                </div>
+            </div><!-- /container -->
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <h2 class="section-title section__title">Трёхлитровая банка с двойным дном</h2>
+                <div class="card card-full card-bottom">
+                    <h3 class="card__title">Часть денег проваливается на дно</h3>
+                    <p class="card__text">К концу месяца у вас накапливается сумма равная 10% от&nbsp;всех пополнений. Можно смело тратить их на мечту!</p>
+                </div>
+                <div class="card-wrap">
+                    <div class="card section__card">
+                        <h3 class="card__title">Деньги дома</h3>
+                        <p class="card__text">Когда деньги лежат дома, у вас просто нет возможности потратить их на всякую ерунду</p>
+                    </div>
+                    <div class="card section__card">
+                        <h3 class="card__title">Без комиссии</h3>
+                        <p class="card__text">Пополняйте банку без комиссии. Доставать деньги можно также без комиссий и штрафов</p>
+                    </div>
+                    <div class="card section__card">
+                        <h3 class="card__title">Копейка рубль бережет</h3>
+                        <p class="card__text">Вы можете бросать в банку даже мелочь, которая лежала в кармане после покупок.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="best">
+            <div class="container">
+                <h2 class="section-title section__title">Лучшая банка в мире</h2>
+                <span class="section-subtitle">По версии мамы, бабушки и тёти</span>
+                <div class="card-wrap">
+                    <div class="card-block best__card-block">
+                        <div class="card best-card">
+                            <img src="css/card1.png" alt="" class="best-card__image">
+                        </div>
+                        <p class="best-card__text">Контролируйте доходы, 
+                                на банке есть бумажка</p>
+                    </div>
+                    <div class="card-block best__card-block">
+                        <div class="card best-card">
+                            <img src="css/card2.png" alt="" class="best-card__image image-left">
+                        </div>  
+                        <p class="best-card__text">Молоточек для самых важных случаев</p>
+                    </div>
+                    <div class="card-block best__card-block">
+                        <div class="card best-card image-right">
+                                <!-- <img src="css/card3.png" alt="" class="best-card__image image-right"> -->
+                        </div>
+                        <p class="best-card__text">Пополнение одним легким движением руки</p>
+                    </div>
+                    <div class="card-block best__card-block">
+                        <div class="card best-card">
+                            <img src="css/card4.png" alt="" class="best-card__image">
+                        </div>
+                        <p class="best-card__text">Одна банка — сколько угодно валют</p>
+                    </div> 
+                </div>
+            </div>
+        </section>
+
+        <section class="delivery" id='orderBank'>
+            <div class="container">
+                <h2 class="section-title delivery__title">Получите банку, не выходя из дома</h2>
+                    <form action="#" class="form delivery__form">
+                        <div class="row">
+                            <div class="col-100">
+                                <input type='text' id='fio' class='input form__input' placeholder="Фамилия Имя Отчество">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-50">
+                                <input type='tel' id='tel' class='input form__input' placeholder="Номер телефона">
+                            </div>
+                            <div class="col-50">
+                                <input id='email' class='input form__input' placeholder="Электронная почта">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-100">
+                                <input id='data' class='input form__input' placeholder="Дата рождения">
+                            </div>
+                        </div>
+                        <div class="button-block">
+                            <button type='submit' id="sendButton" class="button">Заказать банку</button>
+                        </div>
+                    </form>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <p class="footer__text">Название Penkoff вымышлено и все совпадения с реальностью случайны. Информация на данном сайте представлена исключительно в образовательных целях. Сайт не является офертой или рекламным предложением.</p>
+            </div>
+        </footer>
+    </body>
+</html>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src='js/jquery.maskedinput.js'></script>
+<script src='js/script.js'></script>

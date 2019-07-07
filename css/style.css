@@ -1,0 +1,339 @@
+*, *:after, *:before{
+    box-sizing: border-box;
+}
+body{
+    background: #fff;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.header {
+    background-color: #f4f4f4;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    z-index: 1;
+    position: sticky;
+    top: 0;
+    
+}
+.container{
+    max-width: 1107px;
+    margin: auto;
+}
+.header-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav {
+    flex-basis: 80%;
+}
+.logo {
+    font-size: 16px;
+    font-weight: 700;
+    color: #95989a;
+    margin-right: 40px;
+}
+.nav__link {
+    font-size: 12px;
+    color: #95989a;
+    text-decoration: none;
+    margin-right: 20px;
+}
+.login {
+    font-size: 12px;
+    color: #95989a;
+    text-decoration: none;
+    text-transform: uppercase;
+    vertical-align: bottom;
+    padding-right: 13px;
+}
+.tabs-logo{
+    font-size: 20px;
+    color: #95989a;
+}
+.tabs{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #eaeaea;
+    margin-bottom: 20px;
+}
+.tabs-menu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+.tabs-menu__item {
+    margin-left: 15px;
+    position: relative;
+}
+.tabs-menu__item:after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -19px;
+    left: 50%;
+    width: 0%;
+    height: 3.5px;
+    background-color: #fcde29;
+    transition: width 0.3s;
+    transform: translateX(-50%);
+}
+.tabs-menu__item:hover:after {
+    width: 100%;
+}
+.tabs-content {
+    background: #f2f4ff url('tabs-content.png') no-repeat bottom right 135px;
+    border-radius: 10px;
+    padding-top: 45px;
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-bottom: 43px;
+    margin-bottom: 64px;
+}
+.tabs-content__title {
+    font-size: 36px;
+}
+.tabs-content__text{
+    font-size: 18px;
+    max-width: 320px;
+    margin-bottom: 90px;
+}
+.button {
+    border-radius: 6px;
+    background-color: #fcde29;
+    padding: 16px 33px;
+    font-style: 16px;
+    font-weight: 700;
+    border: none;
+}
+.section-title {
+    font-size: 30px;
+    text-align: center;
+    font-weight: 400;
+}
+.section__title {
+    margin-bottom: 30px;
+}
+.card {
+    background-color: #f2f4ff;
+    padding: 23px;
+    border-radius: 10px;
+}
+.card__text {
+    max-width: 490px;
+    font-size: 16px;
+}
+.card-bottom {
+    background: #f2f4ff url('coins.png') no-repeat center right 80px;
+    margin-bottom: 40px;
+}
+.section__card {
+    margin-bottom: 40px;
+    margin-right: 50px;
+}
+.section__card:last-child { /* Псевдокласс */
+    margin-right: 0px;
+}
+.card-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+.section-subtitle {
+    text-align: center;
+    font-size: 16px;
+    display: block;
+    margin-bottom: 32px;
+}
+.best__title {
+    margin-bottom: 9px;
+}
+.best-card {
+    width: 240px;
+    height: 260px;
+    padding: 0;
+    position: relative;
+}
+.best-card__image {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.best-card__image:nth-child(1){
+    padding-right: 30px;
+    padding-top: 31px;
+}
+.image-left {
+    left: 0;
+    transform: translateX(0);
+}
+.image-right {
+    background: #f2f4ff url('card3.png') no-repeat bottom right;
+}
+.best-card__text {
+    max-width: 200px;
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+}
+.delivery {
+    padding-top: 60px;
+    padding-bottom: 100px;
+}
+.input {
+    background-color: #f7f8ff;
+    border: none;
+    padding: 20px;
+    width: 100%;
+    border-radius: 7px;
+    font-size: 16px;
+}
+.form__input{
+    margin-bottom: 30px;
+}
+form {
+    max-width: 600px;
+    margin: auto;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.col-100 {
+    flex-basis: 100%;
+}
+.col-50 {
+    flex-basis: 48%;
+}
+.button-block {
+    display: flex;
+    justify-content: flex-end;
+}
+.delivery__form {
+    margin-top: 60px;
+}
+footer {
+    background: #f7f7f7;
+    padding: 60px 0;
+}
+.footer__text {
+    text-align: center;
+    max-width: 670px;
+    margin: auto;
+    font-size: 12px;
+    font-weight: 400;
+    color: #272727;
+}
+@media (max-width:1200px){
+    .container{
+        max-width: 960px;
+    }
+    .best-card {
+        width: 200px;
+        height: 250px;
+        overflow: hidden;
+    }
+}
+@media (max-width:992px){
+    .container{
+        max-width: 90%;
+    }
+    .tabs-content{
+        background-size: 200px;
+    }
+    .card-bottom{
+        background-size: contain;
+        background-position: center right 0;
+    }
+    .card__text {
+        max-width: 300px;
+    }
+    .card-wrap{
+        flex-wrap: wrap;
+    }
+    .card-block {
+        flex-basis: 45%;
+        margin-bottom: 30px;
+    }
+    .best__card-block {
+        margin-bottom: 30px;
+    }
+    .best-card{
+        margin: auto;
+    }
+}
+@media (max-width:768px){
+    .container{
+        max-width: 90%;
+    }
+    .tabs-content{
+        background-size: 180px;
+        background-position: bottom right 50px;
+    }
+    .card-bottom {
+        background-image: none;
+    }
+    .section__card {
+        margin-right: 0;
+        flex-basis: 100%;
+    }
+}
+@media (max-width:576px){
+    .container{
+        max-width: 95%;
+    }
+    .navigation {
+        display: none;
+    }
+    .tabs-menu__item {
+        font-size: 12px;
+    }
+    .tabs-logo {
+        display: none;
+    }
+    .tabs-content__title {
+        font-size: 24px;
+    }
+    .tabs-content__text {
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+    .tabs-content {
+        background-image: none;
+    }
+    .section__title {
+        font-size: 20px;
+    }
+    .col-50 {
+        flex-basis: 100%;
+    }
+    .row {
+        flex-wrap: wrap;
+    }
+    .form__input {
+        margin-bottom: 15px;
+    }
+    .button-block {
+        justify-content: center;
+    }
+    .delivery__form {
+        margin-top: 20px;
+    }
+}
+#preloader>p{
+    display:none;
+}
+#preloader_preload{
+    display: block;
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    min-width: 1000px;
+    background: #F27935 url(http://hello-site.ru//main/images/preloads/puff.svg) center center no-repeat;
+    background-size:79px;
+}
