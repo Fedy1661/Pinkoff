@@ -21,8 +21,8 @@ $(document).ready(function () {
   setTimeout(function(){
     fadeOutnojquery(preloader);
   },1000);
-  $('.tabs-content').hide().fadeIn(1000);
-  $('.tabs').hide().fadeIn(1000);
+  $('.tabs-content').hide().fadeIn(1700);
+  $('.tabs').hide().fadeIn(1500);
   var inputs = ['fio', 'tel', 'email', 'data', 'sendButton'];
   $(".tabs-content").on("click", 'button',function (event) { // Плавный переход вниз страницы
     event.preventDefault();
