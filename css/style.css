@@ -321,6 +321,9 @@ footer {
     .delivery__form {
         margin-top: 20px;
     }
+    .card-block {
+        margin-left: 50px;
+    }
 }
 #preloader>p{
     display:none;
