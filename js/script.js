@@ -12,6 +12,7 @@ function fadeOutnojquery(el){el.style.opacity = 1;
     },1000);
   };
 $(document).ready(function () {
+  var inputs = ['fio', 'tel', 'email', 'data', 'sendButton'];
   $(".tabs-content").on("click", 'button',function (event) { // Плавный переход вниз страницы
     event.preventDefault();
     console.log(this);
@@ -35,7 +36,7 @@ $(document).ready(function () {
   });
   $('#fio, #tel, #data, #email').keyup(function (e) { 
     if (e.which == 13) {
-      $('#sendButton').click();   
+      $('#'+inputs[inputs.indexOf(this.id)+1]).focus();  
     }
   });
 });
