@@ -278,8 +278,9 @@ footer {
     .card-bottom {
         background-image: none;
     }
-    .section__card {
+    .section__card, .card-full {
         margin-right: 0;
+        margin-bottom: 10px;
         flex-basis: 100%;
     }
 }
