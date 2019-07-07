@@ -282,7 +282,7 @@ footer {
 }
 @media (max-width:576px){
     .container{
-        max-width: 95%;
+        max-width: 90%;
     }
     .navigation {
         display: none;
