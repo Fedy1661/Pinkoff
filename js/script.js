@@ -21,8 +21,8 @@ $(document).ready(function () {
   setTimeout(function(){
     fadeOutnojquery(preloader);
   },1000);
-  $('.tabs-content').hide().fadeToggle(2200,'swing',1).css('animation-delay', '1.4s');
-  $('.tabs').hide().fadeToggle(2000,'linear',1).css('animation-delay', '1.2s');
+  $('.tabs-content').hide().fadeToggle(3300,'swing',1).css('animation-delay', '1.4s');
+  $('.tabs').hide().fadeToggle(3000,'linear',1).css('animation-delay', '1.2s');
   var inputs = ['fio', 'tel', 'email', 'data', 'sendButton'];
   $(".tabs-content").on("click", 'button',function (event) { // Плавный переход вниз страницы
     event.preventDefault();
