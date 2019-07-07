@@ -21,8 +21,8 @@ $(document).ready(function () {
   setTimeout(function(){
     fadeOutnojquery(preloader);
   },1000);
-  $('.tabs-content').addClass('wow fadeIn');
-  $('.tabs').addClass('wow fadeIn');
+  // $('.tabs-content').addClass('wow fadeIn');
+  // $('.tabs').addClass('wow fadeIn');
   var inputs = ['fio', 'tel', 'email', 'data', 'sendButton'];
   $(".tabs-content").on("click", 'button',function (event) { // Плавный переход вниз страницы
     event.preventDefault();
