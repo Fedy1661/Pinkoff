@@ -323,6 +323,7 @@ footer {
     }
     .card-block {
         margin: auto;
+        flex-basis: 100%;
     }
 }
 #preloader>p{
