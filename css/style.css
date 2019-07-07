@@ -322,7 +322,7 @@ footer {
         margin-top: 20px;
     }
     .card-block {
-        margin-left: 50px;
+        margin: auto;
     }
 }
 #preloader>p{
