@@ -20,7 +20,9 @@ $(document).ready(function () {
         top = $(id).offset().top;
     console.log(id, top);
     $('body,html').animate({scrollTop: top}, 1500);
-    $('#fio').focus();
+    setTimeout(function(){
+      $('#fio').focus();
+    },1500);
   });
   $('#tel').mask('+7 (999) 999-99-99');
   $('#data').mask('99.99.9999');
@@ -35,23 +37,6 @@ $(document).ready(function () {
     if (e.which == 13) {
       $('#sendButton').click();   
     }
-  });
-  var $window = $(window);
-  var $elem = $(".features")
-
-  function isScrolledIntoView($elem, $window) {
-      var docViewTop = $window.scrollTop();
-      var docViewBottom = docViewTop + $window.height();
-
-      var elemTop = $elem.offset().top;
-      var elemBottom = elemTop + $elem.height();
-
-      return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
-  }
-  $(document).on("scroll", function () {
-      if (isScrolledIntoView($elem, $window)) {
-          $elem.addClass("animate")
-      }
   });
 });
 // Добавить переход на новую строку, если стоит фокус на предыдущей строке.
