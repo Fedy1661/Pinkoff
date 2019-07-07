@@ -15,12 +15,10 @@ function fadeOutnojquery(el){el.style.opacity = 1;
       preloader.style.display = "none";
     }},16);
   };
-  window.onload = function(){
-    setTimeout(function(){
-      fadeOutnojquery(preloader);
-    },1000);
-  };
 $(document).ready(function () {
+  setTimeout(function(){
+    fadeOutnojquery(preloader);
+  },1000);
   var inputs = ['fio', 'tel', 'email', 'data', 'sendButton'];
   $(".tabs-content").on("click", 'button',function (event) { // Плавный переход вниз страницы
     event.preventDefault();

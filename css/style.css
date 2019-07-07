@@ -360,3 +360,6 @@ object {
     width: 240px;
     height: 240px;
 }
+.wow {
+    visibility: hidden;
+ }
