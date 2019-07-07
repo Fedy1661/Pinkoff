@@ -1,3 +1,12 @@
+var preloaders = ['pldr1.svg', 'pldr2.svg', 'pldr3.svg', 'pldr4.svg', 'pldr5.svg']
+function randomPreloader () { // Рандомный прелоадер при перезагрузке стр.
+  var min = 0,max = preloaders.length,
+  randomIndex = Math.floor(Math.random() * (max - min) + min);
+  console.log(randomIndex);
+  return 'css/'+preloaders[randomIndex];
+}
+$('#svgPreloader').attr('data',randomPreloader())
+
 var preloader = document.getElementById("preloader_preload");
 function fadeOutnojquery(el){el.style.opacity = 1;
   var interpreloader = setInterval(function(){
