@@ -330,6 +330,9 @@ footer {
         flex-basis: 100%;
         margin-bottom: 20px;
     }
+    .delivery {
+        padding-top: 5px;
+    }
 }
 #preloader>p{
     display:none;
