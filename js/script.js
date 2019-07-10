@@ -19,7 +19,7 @@ function fadeOutnojquery(el){
   $('.tabs').hide().fadeIn(1300);
   $('.tabs-content').hide().fadeIn(2000);
   };
-$(document).ready(function () {
+$(document).ready(function () { // Функция при готовности DOM
   setTimeout(function(){
     fadeOutnojquery(preloader);
   },1000);
@@ -28,7 +28,7 @@ $(document).ready(function () {
     event.preventDefault();
     console.log(this);
     
-    var id  = $(this).attr('href'),
+    var id  = 'orderBank', // ID на который опустится скролл
         top = $(id).offset().top;
     console.log(id, top);
     $('body,html').animate({scrollTop: top}, 1500);
