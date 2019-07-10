@@ -82,6 +82,12 @@ body{
 .tabs-menu__item:hover:after {
     width: 100%;
 }
+button {
+    transition: background 2s ease;
+}
+button:hover {
+    background-color: #fcc029;
+}
 .tabs-content {
     background: #f2f4ff url('tabs-content.png') no-repeat bottom right 135px;
     border-radius: 10px;
