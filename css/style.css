@@ -116,8 +116,7 @@ button:focus {
     outline: none; /* Отключение обводки при работе с сайтом на клав-е */
 }
 input:focus {
-    outline: none;
-    border-color: #fcde29;
+    outline-color: #fcde29;
 }
 .section-title {
     font-size: 30px;
