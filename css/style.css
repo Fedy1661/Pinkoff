@@ -108,15 +108,16 @@ body{
     border: none;
     transition: background 1.3s ease;
 }
-button:hover,
-button:focus { /* изнмение фота при работе с TAB'ом */
+button:hover { /* изнмение фота при работе с TAB'ом */
     background-color: #FF7F50;
 }
-button:focus {
-    outline: orangered; /* Отключение обводки при работе с сайтом на клав-е */
-}
-input:focus {
-    outline-color: #fcde29;
+.input:focus {
+    /* outline-color: #fcde29;
+    outline-style: solid;
+    outline-width: 5px;
+    -moz-outline-radius: 25px; */
+    outline: none;
+    border: 2px solid #fcde29;
 }
 .section-title {
     font-size: 30px;
@@ -194,11 +195,11 @@ input:focus {
 }
 .input {
     background-color: #f7f8ff;
-    border: none;
     padding: 20px;
     width: 100%;
     border-radius: 7px;
     font-size: 16px;
+    border: 2px solid white;
 }
 .form__input{
     margin-bottom: 30px;
