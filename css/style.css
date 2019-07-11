@@ -110,9 +110,6 @@ body{
 }
 button:hover,
 button:focus { /* изнмение фота при работе с TAB'ом */
-    background-color: #fcc029;
-}
-button:active {
     background-color: #FF7F50;
 }
 button:focus {
