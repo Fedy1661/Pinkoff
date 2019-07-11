@@ -112,6 +112,9 @@ button:hover,
 button:focus { /* изнмение фота при работе с TAB'ом */
     background-color: #fcc029;
 }
+button:focus {
+    outline: 0; /* Отключение обводки при работе с сайтом на клав-е */
+}
 .section-title {
     font-size: 30px;
     text-align: center;
