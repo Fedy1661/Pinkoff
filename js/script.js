@@ -29,7 +29,7 @@ $(document).ready(function () { // Функция при готовности DO
     event.preventDefault();
     console.log(this);
     
-    var id  = 'orderBank', // ID на который опустится скролл
+    var id  = '#orderBank', // ID на который опустится скролл
         top = $(id).offset().top;
     console.log(id, top);
     $('body,html').animate({scrollTop: top}, 1500);
