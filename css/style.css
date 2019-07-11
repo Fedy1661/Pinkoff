@@ -112,6 +112,9 @@ button:hover,
 button:focus { /* изнмение фота при работе с TAB'ом */
     background-color: #fcc029;
 }
+button:active {
+    background-color: #FF7F50;
+}
 button:focus {
     outline: 0; /* Отключение обводки при работе с сайтом на клав-е */
 }
