@@ -113,7 +113,7 @@ button:focus { /* изнмение фота при работе с TAB'ом */
     background-color: #FF7F50;
 }
 button:focus {
-    outline: none; /* Отключение обводки при работе с сайтом на клав-е */
+    outline: orangered; /* Отключение обводки при работе с сайтом на клав-е */
 }
 input:focus {
     outline-color: #fcde29;
