@@ -108,7 +108,8 @@ body{
     border: none;
     transition: background 2s ease;
 }
-button:hover {
+button:hover,
+button:focus { /* изнмение фота при работе с TAB'ом */
     background-color: #fcc029;
 }
 .section-title {
@@ -365,6 +366,3 @@ object {
     height: 240px;
 }
 .wow { visibility: hidden; }
-:focus {
-    border: #fcde29;
-}
