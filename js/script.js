@@ -5,7 +5,7 @@ function randomPreloader () { // Рандомный прелоадер при п
   console.log(randomIndex);
   return 'css/'+preloaders[randomIndex];
 }
-$('.preloader_preload').append('<object data='+randomPreloader()+'></object>');
+$('#preloader_preload').append('<object data="'+randomPreloader()+'"></object>');
 // $('.svgPreloader').attr('data',randomPreloader())
 
 var preloader = document.getElementById("preloader_preload");
