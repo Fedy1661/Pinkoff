@@ -365,3 +365,6 @@ object {
     height: 240px;
 }
 .wow { visibility: hidden; }
+:focus {
+    border: #fcde29;
+}
