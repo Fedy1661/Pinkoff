@@ -115,6 +115,10 @@ button:focus { /* изнмение фота при работе с TAB'ом */
 button:focus {
     outline: none; /* Отключение обводки при работе с сайтом на клав-е */
 }
+input:focus {
+    outline: none;
+    border-color: #fcde29;
+}
 .section-title {
     font-size: 30px;
     text-align: center;
