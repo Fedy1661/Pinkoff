@@ -111,7 +111,7 @@ body{
 button:hover { /* изнмение фота при работе с TAB'ом */
     background-color: #FF7F50;
 }
-.input:focus {
+.input:focus, .input:hover {
     /* outline-color: #fcde29;
     outline-style: solid;
     outline-width: 5px;
