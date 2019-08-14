@@ -1,4 +1,4 @@
-var preloaders = ['pldr1.svg', 'pldr2.svg', 'pldr3.svg', 'pldr4.svg', 'pldr5.svg']
+var preloaders = ['https://svgshare.com/i/EYh.svg', 'https://svgshare.com/i/EYT.svg', 'https://svgshare.com/i/EXM.svg', 'https://svgshare.com/i/EYu.svg', 'https://svgshare.com/i/EYY.svg']
 
 function randomPreloader() { // Рандомный прелоадер при перезагрузке стр.
     var min = 0,
