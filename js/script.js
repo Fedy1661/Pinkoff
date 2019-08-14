@@ -1,10 +1,10 @@
-var preloaders = ['https://svgshare.com/i/EYh.svg', 'https://svgshare.com/i/EYT.svg', 'https://svgshare.com/i/EXM.svg', 'https://svgshare.com/i/EYu.svg', 'https://svgshare.com/i/EYY.svg']
+var preloaders = ['pldr1.svg', 'pldr2.svg', 'pldr3.svg', 'pldr4.svg', 'pldr5.svg']
 
 function randomPreloader() { // Рандомный прелоадер при перезагрузке стр.
     var min = 0,
         max = preloaders.length,
         randomIndex = Math.floor(Math.random() * (max - min) + min);
-    return preloaders[randomIndex];
+    return '../images/' + preloaders[randomIndex];
 }
 $('#preloader_preload').append('<object data="' + randomPreloader() + '"></object>');
 // $('.svgPreloader').attr('data',randomPreloader())
@@ -41,6 +41,7 @@ $(document).ready(function() { // Функция при готовности DOM
     $('#tel').mask('+7 (999) 999-99-99');
     $('#data').mask('99.99.9999');
     $('#tel').on('keyup change', function(e) {
+
         if ($('#tel').val().indexOf('_') == -1 && e.which != 9 && e.which != 16) {
             $('#email').focus();
         }
@@ -51,4 +52,4 @@ $(document).ready(function() { // Функция при готовности DOM
         }
     });
 });
-// Добавить переход на новую строку, если стоит фокус на предыдущей строке
+// Добавить переход на новую строку, если стоит фокус на предыдущей строке.
