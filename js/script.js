@@ -4,7 +4,6 @@ function randomPreloader() { // Рандомный прелоадер при п�
     var min = 0,
         max = preloaders.length,
         randomIndex = Math.floor(Math.random() * (max - min) + min);
-    console.log(randomIndex);
     return '../images/' + preloaders[randomIndex];
 }
 $('#preloader_preload').append('<object data="' + randomPreloader() + '"></object>');
@@ -31,11 +30,9 @@ $(document).ready(function() { // Функция при готовности DOM
     var inputs = ['fio', 'tel', 'email', 'data', 'sendButton'];
     $(".tabs-content").on("click", 'button', function(event) { // Плавный переход вниз страницы
         event.preventDefault();
-        console.log(this);
 
         var id = '#orderBank', // ID на который опустится скролл
             top = $(id).offset().top;
-        console.log(id, top);
         $('body,html').animate({ scrollTop: top }, 1500);
         setTimeout(function() {
             $('#fio').focus();
@@ -44,8 +41,6 @@ $(document).ready(function() { // Функция при готовности DOM
     $('#tel').mask('+7 (999) 999-99-99');
     $('#data').mask('99.99.9999');
     $('#tel').on('keyup change', function(e) {
-        console.log(e.which);
-
         if ($('#tel').val().indexOf('_') == -1 && e.which != 9 && e.which != 16) {
             $('#email').focus();
         }
