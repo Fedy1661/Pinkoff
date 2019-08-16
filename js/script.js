@@ -4,7 +4,7 @@ function randomPreloader() { // Рандомный прелоадер при п�
     var min = 0,
         max = preloaders.length,
         randomIndex = Math.floor(Math.random() * (max - min) + min);
-    return './images/' + preloaders[randomIndex];
+    return '/images/' + preloaders[randomIndex];
 }
 $('#preloader_preload').append('<object data="' + randomPreloader() + '"></object>');
 // $('.svgPreloader').attr('data',randomPreloader())
