@@ -94,8 +94,7 @@
         transform: translateX(-50%);
     }
     
-    .tabs-menu__item:hover:after,
-    .tabs-menu__item:active:after {
+    .tabs-menu__item:hover:after {
         width: 100%;
     }
     
